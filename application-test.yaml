@@ -1,0 +1,40 @@
+server:
+  port: 9191
+
+eureka:
+  instance:
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 2 
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:5001/eureka/
+    healthcheck:
+      enabled: true  
+
+  
+  
+spring:
+  application:
+    name: db-op-service  
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://10.60.253.88:5432/sfm
+    username: sfm
+    password: sfm
+
+    
+    
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    circuitbreakers:
+      enabled: true     
