@@ -19,8 +19,6 @@ eureka:
 spring:
   application:
     name: db-op-service  
-  datasource:
-    driver-class-name: org.postgresql.Driver
      
 mes:
   datasource:
