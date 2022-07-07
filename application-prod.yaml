@@ -22,7 +22,7 @@ spring:
      
 mes:
   datasource:
-    details: v7bxfgW6hd4qrs7C3nY7MhvnPPvugM7dJrzzb5hUpxUEP0K3eqdWOzAag5B+e4F
+    details: v7bxfgW6hd4qrs7C3nY7MhvnPPvugM7dJrzzb5hUpxUEP0K3eqdWOzAag5B+e4FW
     
 management:
   endpoint:
