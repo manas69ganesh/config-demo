@@ -23,7 +23,7 @@ spring:
     driver-class-name: org.postgresql.Driver
      
 mes:
-  datasouce:
+  datasource:
     details: v7bxfgW6hd4qrs7C3nY7MhvnPPvugM7dJrzzb5hUpxUEP0K3eqdWOzAag5B
     
 management:
