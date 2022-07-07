@@ -21,10 +21,13 @@ spring:
     name: db-op-service  
   datasource:
     driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://10.60.253.88:5432/sfm
+    username: sfm
+    password: sfm
     
-mes:
-  datasouce:
-    details: v7bxfgW6hd4qrs7C3nY7MhvnPPvugM7dJrzzb5hUpxUEP0K3eqdWOzAag5B
+#mes:
+#  datasouce:
+#    details: v7bxfgW6hd4qrs7C3nY7MhvnPPvugM7dJrzzb5hUpxUEP0K3eqdWOzAag5B
     
 management:
   endpoint:
