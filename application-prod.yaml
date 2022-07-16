@@ -34,4 +34,34 @@ management:
         include: "*"
   health:
     circuitbreakers:
-      enabled: true     
+      enabled: true   
+      
+resilience4j:
+  circuitbreaker:
+    instances:
+      createProductCB:
+        failure-rate-threshold: 100
+        sliding-window-size: 10
+        sliding-window-type: count-based
+        minimum-number-of-calls: 2
+        automatic-transition-from-open-to-half-open-enabled: true
+        permitted-number-of-calls-in-half-open-state: 4
+        wait-duration-in-open-state: 1000
+      
+      getProductCB:
+        failure-rate-threshold: 100
+        sliding-window-size: 10
+        sliding-window-type: count-based
+        minimum-number-of-calls: 2
+        automatic-transition-from-open-to-half-open-enabled: true
+        permitted-number-of-calls-in-half-open-state: 4
+        wait-duration-in-open-state: 1000  
+      
+      deleteProductCB:
+        failure-rate-threshold: 100
+        sliding-window-size: 10
+        sliding-window-type: count-based
+        minimum-number-of-calls: 2
+        automatic-transition-from-open-to-half-open-enabled: true
+        permitted-number-of-calls-in-half-open-state: 4
+        wait-duration-in-open-state: 1000  
