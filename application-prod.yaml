@@ -91,4 +91,22 @@ resilience4j:
         minimum-number-of-calls: 2
         automatic-transition-from-open-to-half-open-enabled: true
         permitted-number-of-calls-in-half-open-state: 4
-        wait-duration-in-open-state: 1000     
+        wait-duration-in-open-state: 1000 
+        
+      deleteEntityCB:
+        failure-rate-threshold: 100
+        sliding-window-size: 10
+        sliding-window-type: count-based
+        minimum-number-of-calls: 2
+        automatic-transition-from-open-to-half-open-enabled: true
+        permitted-number-of-calls-in-half-open-state: 4
+        wait-duration-in-open-state: 1000
+
+      updateEntityCB:
+        failure-rate-threshold: 100
+        sliding-window-size: 10
+        sliding-window-type: count-based
+        minimum-number-of-calls: 2
+        automatic-transition-from-open-to-half-open-enabled: true
+        permitted-number-of-calls-in-half-open-state: 4
+        wait-duration-in-open-state: 1000
