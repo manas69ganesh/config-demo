@@ -127,4 +127,4 @@ resilience4j:
         minimum-number-of-calls: 2
         automatic-transition-from-open-to-half-open-enabled: true
         permitted-number-of-calls-in-half-open-state: 4
-        wait-duration-in-open-state: 1000
+        wait-duration-in-open-state: 5000
